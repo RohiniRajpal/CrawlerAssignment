@@ -1,11 +1,14 @@
-package com.telstra.codechallenge.crawler.service;
+package com.rohini.crawler.service;
 
-import au.com.rakesh.crawler.model.PageTreeInfo;
+import com.rohini.crawler.exceptions.CrawlerException;
+import com.rohini.crawler.model.PageTreeInfo;
+import org.springframework.stereotype.Component;
 
 /**
  * @author buddy
  *
  */
+@Component
 public interface CrawlerService {
 
     /**
@@ -19,10 +22,7 @@ public interface CrawlerService {
      *            already processed urls to avoid loops
      * @return page info upto desired or max depth
      */
-    public PageTreeInfo deepCrawl(final String url, int depth);
+    public PageTreeInfo crawl(final String url, int depth);
 
-
-
-
-    public void setMAX_COUNT(int depth);
+    public void setMAX_COUNT(int depth) throws CrawlerException;
 }

@@ -1,7 +1,7 @@
 /**
  *
  */
-package com.telstra.codechallenge.crawler.model;
+package com.rohini.crawler.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,14 +9,12 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @author buddy
+ * @author rohini
  *
  */
 @Data
 @AllArgsConstructor
-public class PageInfo implements Serializable {
-
-    private static final long serialVersionUID = 1993875051659981029L;
+public class PageInfo {
 
     private String page_title;
 

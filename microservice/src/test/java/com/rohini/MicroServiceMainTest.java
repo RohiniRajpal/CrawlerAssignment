@@ -1,4 +1,4 @@
-package com.telstra.codechallenge;
+package com.rohini;
 
 import static org.junit.Assert.assertEquals;
 
